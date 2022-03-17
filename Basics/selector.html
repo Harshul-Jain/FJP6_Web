@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /*universal selector -->*/
+        *{
+            color: blue;
+        }
+        div{
+            background-color: aqua;
+        }
+        /* class selector- can be applied on many tags*/
+        .container{
+            color: brown;
+        }
+        .container2{
+            font-size: x-large;
+        }
+        /* id selector - apply to single only*/
+        #one{
+            font-size: x-large;
+        }
+        /* grouping  */
+        .one,.two,.three{
+            background-color: burlywood;
+            color: chartreuse;
+            font-size: large;
+        }
+        /* select tag with multiple classes*/
+        .container.container2{
+            background-color: blue;
+        }
+        /* attribute selector*/
+        input[value="Select me"]{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>heading</h1>
+    <!-- id attribute -->
+    <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, error possimus odit animi excepturi esse laboriosam! Cum maiores quia assumenda veritatis, ipsum aut ad rerum eos dolores molestias laborum asperiores.</p>
+    <div class="container">
+        <h1>heading inside div</h1>
+        <p>para inside div</p>
+    </div>
+    <div>
+        <h3>heading 3 inside div</h3>
+    </div>
+    <h3>heading 3</h3>
+    <a class="container" href="">link to nothing</a>
+    <h6>heading 6</h6>
+     <p class="container2">class container2 is applied on me</p>
+     <p class="container2">class container2 is applied on me</p>
+     <!-- we can apply more than one class on a tag -->
+     <p class="container container2">I have both classes</p>
+    <h1>Grouping</h1>
+    <a class="one" href="">Link</a>
+    <h5 class="two">heading 5</h5>
+    <p class="three">para</p>
+    <!-- space means descendent and > means child  --> <form>
+        <input type="button" value="Click Me">
+        <input type="button" value="Select me">
+    </form>
+
+</body>
+</html>
