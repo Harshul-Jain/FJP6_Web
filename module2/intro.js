@@ -30,3 +30,19 @@ while(count>0){
     console.log(count);
     count--;
 }
+
+//isPrime
+let n=7;
+let flag=false;
+for(let i=2;i*i<=n;i++){
+    if(n%i==0){
+        flag=true;
+        break;
+    }
+}
+if(flag){
+    console.log("Not prime");
+}
+else{
+    console.log("Prime");
+}
