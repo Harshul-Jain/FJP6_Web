@@ -23,4 +23,27 @@ let capAmerica ={
         console.log("Cap America says Hi!!!!");
     }
 }
+
+//whole object
 console.log(capAmerica);
+
+//name of capAmerica
+console.log(capAmerica.Name);
+//Age of capAmerica
+console.log(capAmerica.Age);
+//friends of capAmerica
+console.log(capAmerica.Friends);
+//address object
+console.log(capAmerica.address);
+
+console.log(capAmerica.result);//gives undefined if key is not present
+
+//city
+console.log(capAmerica.address.city);
+//paricular friend
+console.log(capAmerica.Friends[0]);
+
+//call fxn sayHi
+console.log(capAmerica.sayHi());// it will also print the return value which is undefined in this case
+//direct way without return value
+capAmerica.sayHi();
