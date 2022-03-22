@@ -19,6 +19,7 @@ let capAmerica ={
         city:"Queens",
         state:'Haryana'
     },
+    isAvenger:false,
     sayHi:function(){
         console.log("Cap America says Hi!!!!");
     }
@@ -47,3 +48,24 @@ console.log(capAmerica.Friends[0]);
 console.log(capAmerica.sayHi());// it will also print the return value which is undefined in this case
 //direct way without return value
 capAmerica.sayHi();
+
+//add a new key to object
+capAmerica.Movies = ['Avengers','Civil War','Endgame'];
+console.log('object after update: ',capAmerica);
+
+//delete a key
+delete capAmerica.Movies;
+
+console.log(capAmerica);
+
+//update
+capAmerica.isAvenger=true;
+capAmerica.address.state='New York';
+console.log(capAmerica);
+
+
+
+// second method to access a key
+
+console.log(capAmerica.Name);
+console.log(capAmerica['Name']);
