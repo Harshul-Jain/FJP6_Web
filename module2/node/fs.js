@@ -1,5 +1,5 @@
 let fs= require("fs");
-console.log(fs);
+//console.log(fs);
 
 let path = require('path');
 
@@ -23,4 +23,36 @@ console.log(fs.readFileSync(filePath,'utf-8'));
 
 //delete
 fs.unlinkSync(filePath);
+
+
+//create a directory
+
+mkdir:- if directory does not exist then it will create directory otherwise it shoes error.
+if(!fs.existsSync("hamariDirectory")){
+    fs.mkdirSync("hamariDirectory")
+}
+
+//Read directory
+
+let folderPath =__dirname;
+
+let contentofFolder =fs.readdirSync(folderPath);
+console.log(contentofFolder);
+
+// Delete a directory
+//it works only on empty directories otherwise gives error 
+
+fs.rmdirSync('hamariDirectory');
+
+//Copy a file
+
+let sourcePath = path.join(__dirname,"file.txt");
+let destinationPath = path.join(__dirname,"module","file.txt");
+console.log(sourcePath)
+console.log(destinationPath);
+
+fs.copyFileSync(sourcePath,destinationPath);
+
+
+
 
