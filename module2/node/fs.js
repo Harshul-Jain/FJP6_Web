@@ -27,7 +27,7 @@ fs.unlinkSync(filePath);
 
 //create a directory
 
-mkdir:- if directory does not exist then it will create directory otherwise it shoes error.
+//mkdir:- if directory does not exist then it will create directory otherwise it shoes error.
 if(!fs.existsSync("hamariDirectory")){
     fs.mkdirSync("hamariDirectory")
 }
